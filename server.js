@@ -40,6 +40,10 @@ app.get('/restaurants', (req, res) => {
     });
 });
 
+app.get('/', (req, res) => {
+  res.send('Hello World!!');
+})
+
 // can also request by ID
 app.get('/restaurants/:id', (req, res) => {
   Restaurant
